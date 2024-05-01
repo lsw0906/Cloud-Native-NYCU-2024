@@ -1,5 +1,4 @@
 name: CI
-
 on: [push]
 jobs:
   k8s_yaml_validator:
@@ -22,9 +21,9 @@ jobs:
  
     - name: Secret Scanning
       uses: trufflesecurity/trufflehog@main
-
-    build_image:
-      runs-on: ubuntu-latest
+    
+  build_image:
+    runs-on: ubuntu-latest
  
     steps:
       - name: Checkout code
